@@ -5,7 +5,6 @@
  */
 package GUI;
 
-import Fichas.GUITools.Juego;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Random;
@@ -148,17 +147,12 @@ public class tableroPrincipal extends javax.swing.JFrame {
         txtaNombreGuerrero.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         txtaNombreGuerrero.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtaNombreGuerrero.setText("Personaje");
-        txtaNombreGuerrero.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtaNombreGuerreroActionPerformed(evt);
-            }
-        });
 
         btbSkip.setText("SKIP LVL");
 
         lblEspacios.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lblEspacios.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEspacios.setText("3");
+        lblEspacios.setText("1");
 
         lblInstruccion.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblInstruccion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -196,15 +190,15 @@ public class tableroPrincipal extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                             .addContainerGap()
                             .addComponent(jScrollPane1))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(55, 55, 55)
+                            .addComponent(lblEspacios, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                             .addContainerGap()
                             .addComponent(lblInstruccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(txtaNombreGuerrero, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(lblEspacios, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtaNombreGuerrero, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                 .addComponent(campoGuerra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -233,11 +227,11 @@ public class tableroPrincipal extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEspacios)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblInstruccion, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtaNombreGuerrero, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -245,6 +239,7 @@ public class tableroPrincipal extends javax.swing.JFrame {
                         .addComponent(btnStart, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblCantAliados1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblCantAliados2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -266,10 +261,6 @@ public class tableroPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtaNombreGuerreroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtaNombreGuerreroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtaNombreGuerreroActionPerformed
 
     /**
      * @param args the command line arguments

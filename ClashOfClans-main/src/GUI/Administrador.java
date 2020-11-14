@@ -29,27 +29,19 @@ public class Administrador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        MenuPanel = new javax.swing.JPanel();
-        lblCreadores = new javax.swing.JLabel();
-        lblCreadores1 = new javax.swing.JLabel();
-        txtfUsuario = new javax.swing.JTextField();
         btnIngresar = new javax.swing.JButton();
         btnAtras = new javax.swing.JButton();
         pswFContraseña = new javax.swing.JPasswordField();
+        lblCreadores1 = new javax.swing.JLabel();
+        lblCreadores = new javax.swing.JLabel();
+        txtfUsuario = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        MenuPanel.setBackground(new java.awt.Color(15, 17, 26));
-
-        lblCreadores.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblCreadores.setForeground(new java.awt.Color(186, 221, 134));
-        lblCreadores.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCreadores.setText("Usuario: ");
-
-        lblCreadores1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblCreadores1.setForeground(new java.awt.Color(186, 221, 134));
-        lblCreadores1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCreadores1.setText("Contraseña: ");
+        setMaximumSize(new java.awt.Dimension(490, 220));
+        setMinimumSize(new java.awt.Dimension(490, 220));
+        setPreferredSize(new java.awt.Dimension(490, 220));
+        getContentPane().setLayout(null);
 
         btnIngresar.setBackground(new java.awt.Color(15, 17, 26));
         btnIngresar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -61,6 +53,8 @@ public class Administrador extends javax.swing.JFrame {
                 btnIngresarActionPerformed(evt);
             }
         });
+        getContentPane().add(btnIngresar);
+        btnIngresar.setBounds(212, 139, 127, 35);
 
         btnAtras.setBackground(new java.awt.Color(15, 17, 26));
         btnAtras.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -72,68 +66,38 @@ public class Administrador extends javax.swing.JFrame {
                 btnAtrasActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAtras);
+        btnAtras.setBounds(78, 139, 100, 35);
 
         pswFContraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pswFContraseñaActionPerformed(evt);
             }
         });
+        getContentPane().add(pswFContraseña);
+        pswFContraseña.setBounds(180, 70, 166, 30);
 
-        javax.swing.GroupLayout MenuPanelLayout = new javax.swing.GroupLayout(MenuPanel);
-        MenuPanel.setLayout(MenuPanelLayout);
-        MenuPanelLayout.setHorizontalGroup(
-            MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MenuPanelLayout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 180, Short.MAX_VALUE)
-                .addComponent(btnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42))
-            .addGroup(MenuPanelLayout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblCreadores1)
-                    .addComponent(lblCreadores))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtfUsuario)
-                    .addComponent(pswFContraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        MenuPanelLayout.setVerticalGroup(
-            MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuPanelLayout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCreadores)
-                    .addComponent(txtfUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCreadores1)
-                    .addComponent(pswFContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
-                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAtras)
-                    .addComponent(btnIngresar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
+        lblCreadores1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblCreadores1.setForeground(new java.awt.Color(186, 221, 134));
+        lblCreadores1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCreadores1.setText("Contraseña: ");
+        getContentPane().add(lblCreadores1);
+        lblCreadores1.setBounds(80, 70, 100, 22);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(MenuPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(MenuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        lblCreadores.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblCreadores.setForeground(new java.awt.Color(186, 221, 134));
+        lblCreadores.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCreadores.setText("Usuario: ");
+        getContentPane().add(lblCreadores);
+        lblCreadores.setBounds(90, 30, 71, 22);
+        getContentPane().add(txtfUsuario);
+        txtfUsuario.setBounds(180, 30, 166, 30);
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Administrador.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 490, 200);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -150,7 +114,9 @@ public class Administrador extends javax.swing.JFrame {
         String usuario = txtfUsuario.getText();
         String password = pswFContraseña.getText();
         if(usuario.equals("admin") && password.equals("123456")){
-            System.out.println("Correcto");
+            JFrame crear = new Creador();
+            crear.setVisible(true);
+            this.dispose();
         }
     }//GEN-LAST:event_btnIngresarActionPerformed
 
@@ -194,9 +160,9 @@ public class Administrador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel MenuPanel;
     private javax.swing.JButton btnAtras;
     private javax.swing.JButton btnIngresar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblCreadores;
     private javax.swing.JLabel lblCreadores1;
     private javax.swing.JPasswordField pswFContraseña;

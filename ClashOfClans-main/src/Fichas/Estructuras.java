@@ -15,8 +15,8 @@ public class Estructuras extends fichasMama {
     //apariencia1
 
 
-    public Estructuras(Guerreros Objetivo, String Imagen, String Nombre, int Damage, int nivelAparicion, boolean tipoGuerrero) {
-        super(Imagen, Nombre, Damage, nivelAparicion, tipoGuerrero);
+    public Estructuras(Guerreros Objetivo, String Nombre, int Damage, int nivelAparicion, boolean tipoGuerrero) {
+        super(Nombre, Damage, nivelAparicion, tipoGuerrero);
         this.Objetivo = Objetivo;
         this.Vida = 1;
     }

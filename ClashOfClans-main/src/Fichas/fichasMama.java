@@ -11,7 +11,6 @@ package Fichas;
  */
 public abstract class fichasMama {
     
-    public String Imagen;
     public String Nombre;
     public int Damage;
     public int Rango;
@@ -19,8 +18,7 @@ public abstract class fichasMama {
     public boolean tipoGuerrero;
     public Guerreros Objetivo;
     
-    public fichasMama(String Imagen, String Nombre, int Damage, int nivelAparicion, boolean tipoGuerrero) {
-        this.Imagen = Imagen;
+    public fichasMama(String Nombre, int Damage, int nivelAparicion, boolean tipoGuerrero) {
         this.Nombre = Nombre;
         this.Damage = Damage;
         this.nivelAparicion = nivelAparicion;
