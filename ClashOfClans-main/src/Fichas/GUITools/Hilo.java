@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GUI;
+package Fichas.GUITools;
 import Fichas.*;
+import GUI.tableroPrincipal;
 import javax.swing.JLabel;
 /**
  *
@@ -16,6 +17,7 @@ public class Hilo extends Thread{
     public JLabel refLabel;
     public int numeroLabel;
     //caracteristicas de GUERREROS o ESTRUCTURAS
+    String imagen;
     public Hilo enemigo;
     String nombre;
     public int damage;
@@ -24,14 +26,12 @@ public class Hilo extends Thread{
     public int campos;
     public boolean tipo;
     
-    
-    //image = new Image;
-    //image = new Image;
-    
+
     private boolean running = true;
     private boolean pause = false;
 
-    public Hilo(Guerreros guerrero) {
+    public Hilo(tableroPrincipal refTablero, Guerreros guerrero) {
+        this.imagen = guerrero.Imagen;
         this.nombre = guerrero.Nombre;
         this.damage = guerrero.Damage;
         this.vida = guerrero.Vida;
@@ -81,7 +81,9 @@ public class Hilo extends Thread{
             
         }    
     }
+ 
     
+
     public void stopThread(){
         this.running = false;
     }
