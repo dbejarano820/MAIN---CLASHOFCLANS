@@ -5,13 +5,11 @@
  */
 package Fichas;
 
-import java.io.Serializable;
-
 /**
  *
  * @author PERSONAL
  */
-public class guerrerosContacto extends Guerreros implements Movimiento, Ruido, Crecer, Serializable{
+public class guerrerosContacto extends Guerreros implements Movimiento, Ruido, Crecer{
 
     public guerrerosContacto(int Vida, int Campos, String Nombre, int Damage, int nivelAparicion, boolean tipoGuerrero) {
         super(Vida, Campos, Nombre, Damage, nivelAparicion, tipoGuerrero);

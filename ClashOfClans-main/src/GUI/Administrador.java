@@ -43,31 +43,31 @@ public class Administrador extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(490, 220));
         getContentPane().setLayout(null);
 
-        btnIngresar.setBackground(new java.awt.Color(15, 17, 26));
-        btnIngresar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnIngresar.setForeground(new java.awt.Color(186, 221, 134));
+        btnIngresar.setBackground(new java.awt.Color(0, 0, 0));
+        btnIngresar.setFont(new java.awt.Font("Bernard MT Condensed", 0, 24)); // NOI18N
+        btnIngresar.setForeground(new java.awt.Color(255, 0, 0));
         btnIngresar.setText("INGRESAR");
-        btnIngresar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(186, 221, 134), 3));
+        btnIngresar.setBorder(null);
         btnIngresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIngresarActionPerformed(evt);
             }
         });
         getContentPane().add(btnIngresar);
-        btnIngresar.setBounds(212, 139, 127, 35);
+        btnIngresar.setBounds(212, 139, 127, 30);
 
-        btnAtras.setBackground(new java.awt.Color(15, 17, 26));
-        btnAtras.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnAtras.setForeground(new java.awt.Color(186, 221, 134));
+        btnAtras.setBackground(new java.awt.Color(0, 0, 0));
+        btnAtras.setFont(new java.awt.Font("Bernard MT Condensed", 0, 24)); // NOI18N
+        btnAtras.setForeground(new java.awt.Color(255, 0, 0));
         btnAtras.setText("ATRAS");
-        btnAtras.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(186, 221, 134), 3));
+        btnAtras.setBorder(null);
         btnAtras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasActionPerformed(evt);
             }
         });
         getContentPane().add(btnAtras);
-        btnAtras.setBounds(78, 139, 100, 35);
+        btnAtras.setBounds(78, 139, 100, 30);
 
         pswFContraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,19 +77,25 @@ public class Administrador extends javax.swing.JFrame {
         getContentPane().add(pswFContraseña);
         pswFContraseña.setBounds(180, 70, 166, 30);
 
-        lblCreadores1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblCreadores1.setForeground(new java.awt.Color(186, 221, 134));
+        lblCreadores1.setBackground(new java.awt.Color(0, 0, 0));
+        lblCreadores1.setFont(new java.awt.Font("Bernard MT Condensed", 0, 18)); // NOI18N
+        lblCreadores1.setForeground(new java.awt.Color(255, 0, 0));
         lblCreadores1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCreadores1.setText("Contraseña: ");
+        lblCreadores1.setBorder(new javax.swing.border.MatteBorder(null));
+        lblCreadores1.setOpaque(true);
         getContentPane().add(lblCreadores1);
-        lblCreadores1.setBounds(80, 70, 100, 22);
+        lblCreadores1.setBounds(80, 70, 90, 24);
 
-        lblCreadores.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblCreadores.setForeground(new java.awt.Color(186, 221, 134));
+        lblCreadores.setBackground(new java.awt.Color(0, 0, 0));
+        lblCreadores.setFont(new java.awt.Font("Bernard MT Condensed", 0, 18)); // NOI18N
+        lblCreadores.setForeground(new java.awt.Color(255, 0, 0));
         lblCreadores.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCreadores.setText("Usuario: ");
+        lblCreadores.setBorder(new javax.swing.border.MatteBorder(null));
+        lblCreadores.setOpaque(true);
         getContentPane().add(lblCreadores);
-        lblCreadores.setBounds(90, 30, 71, 22);
+        lblCreadores.setBounds(80, 30, 70, 24);
         getContentPane().add(txtfUsuario);
         txtfUsuario.setBounds(180, 30, 166, 30);
 
@@ -100,6 +106,7 @@ public class Administrador extends javax.swing.JFrame {
         jLabel1.setBounds(0, 0, 490, 200);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed

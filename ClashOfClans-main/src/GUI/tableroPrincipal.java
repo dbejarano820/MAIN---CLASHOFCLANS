@@ -5,6 +5,7 @@
  */
 package GUI;
 
+import Fichas.GUITools.Juego;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Random;
@@ -260,6 +261,7 @@ public class tableroPrincipal extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

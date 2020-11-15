@@ -11,13 +11,12 @@ package Fichas;
  */
 public class Guerreros extends fichasMama {
     
-    //apariencia1
-    //apariencia2
+
     public int Vida;
     public int Campos;
 
-    public Guerreros(int Vida, int Campos, String Nombre, int Damage, int nivelAparicion, boolean tipoGuerrero) {
-        super(Nombre, Damage, nivelAparicion, tipoGuerrero);
+    public Guerreros(int Vida, int Campos,String Imagen, String Nombre, int Damage, int nivelAparicion, boolean tipoGuerrero) {
+        super(Imagen, Nombre, Damage, nivelAparicion, tipoGuerrero);
         this.Vida = Vida;
         this.Campos = Campos;
     }

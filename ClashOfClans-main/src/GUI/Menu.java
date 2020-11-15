@@ -52,22 +52,23 @@ public class Menu extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(590, 480));
-        setMinimumSize(new java.awt.Dimension(590, 480));
+        setMaximumSize(new java.awt.Dimension(670, 510));
+        setMinimumSize(new java.awt.Dimension(670, 510));
+        setSize(new java.awt.Dimension(670, 510));
         getContentPane().setLayout(null);
 
         lblCreadores.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblCreadores.setForeground(new java.awt.Color(186, 221, 134));
+        lblCreadores.setForeground(new java.awt.Color(255, 0, 0));
         lblCreadores.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCreadores.setText("Daniel B. & Josué G.");
         getContentPane().add(lblCreadores);
-        lblCreadores.setBounds(350, 320, 177, 72);
+        lblCreadores.setBounds(370, 430, 177, 72);
 
-        btnCrear.setBackground(new java.awt.Color(15, 17, 26));
-        btnCrear.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnCrear.setForeground(new java.awt.Color(186, 221, 134));
-        btnCrear.setText("CREAR");
-        btnCrear.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(186, 221, 134), 3));
+        btnCrear.setBackground(new java.awt.Color(0, 0, 0));
+        btnCrear.setFont(new java.awt.Font("Bernard MT Condensed", 0, 24)); // NOI18N
+        btnCrear.setForeground(new java.awt.Color(255, 0, 0));
+        btnCrear.setText("Crear guerreros");
+        btnCrear.setBorder(null);
         btnCrear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearActionPerformed(evt);
@@ -76,11 +77,11 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(btnCrear);
         btnCrear.setBounds(330, 250, 200, 52);
 
-        btnNueva.setBackground(new java.awt.Color(15, 17, 26));
-        btnNueva.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnNueva.setForeground(new java.awt.Color(186, 221, 134));
-        btnNueva.setText("NUEVA");
-        btnNueva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(186, 221, 134), 3));
+        btnNueva.setBackground(new java.awt.Color(0, 0, 0));
+        btnNueva.setFont(new java.awt.Font("Bernard MT Condensed", 0, 24)); // NOI18N
+        btnNueva.setForeground(new java.awt.Color(255, 0, 0));
+        btnNueva.setText("Nueva partida");
+        btnNueva.setBorder(null);
         btnNueva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevaActionPerformed(evt);
@@ -89,11 +90,12 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(btnNueva);
         btnNueva.setBounds(330, 180, 200, 52);
 
-        btnCargar.setBackground(new java.awt.Color(15, 17, 26));
-        btnCargar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnCargar.setForeground(new java.awt.Color(186, 221, 134));
-        btnCargar.setText("CARGAR");
-        btnCargar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(186, 221, 134), 3));
+        btnCargar.setBackground(new java.awt.Color(0, 0, 0));
+        btnCargar.setFont(new java.awt.Font("Bernard MT Condensed", 0, 24)); // NOI18N
+        btnCargar.setForeground(new java.awt.Color(255, 0, 0));
+        btnCargar.setText("Cargar partida");
+        btnCargar.setBorder(null);
+        btnCargar.setPreferredSize(new java.awt.Dimension(132, 30));
         btnCargar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCargarActionPerformed(evt);
@@ -102,20 +104,21 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(btnCargar);
         btnCargar.setBounds(330, 120, 200, 52);
 
-        lblTitulo.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(186, 221, 134));
+        lblTitulo.setFont(new java.awt.Font("Bernard MT Condensed", 1, 40)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(51, 51, 51));
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitulo.setText("Clash of Empires");
-        lblTitulo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(186, 221, 134), 3));
+        lblTitulo.setBorder(new javax.swing.border.MatteBorder(null));
         getContentPane().add(lblTitulo);
         lblTitulo.setBounds(290, 30, 288, 72);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondoMenu.png"))); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 590, 480);
+        jLabel2.setBounds(0, 0, 660, 480);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarActionPerformed
@@ -124,6 +127,9 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnNuevaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaActionPerformed
         // TODO add your handling code here:
+        JFrame tableroPrincipal = new tableroPrincipal();
+        tableroPrincipal.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnNuevaActionPerformed
 
     private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
